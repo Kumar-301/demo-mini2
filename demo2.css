@@ -1,0 +1,307 @@
+@font-face {
+    font-family: "Azosans-medium" ;
+    src: url("font/AzoSans-Medium.ttf");
+}
+@font-face {
+    font-family: "Azosans-bold";;
+    src: url("font/AzoSans-Bold.ttf");
+}
+@font-face {
+    font-family:  "Azosans-regular";
+    src: url("font/AzoSans-Regular.ttf");
+}
+body{
+    margin: 0px;
+    background-color: #2936A2;
+    
+}
+main{
+    overflow: hidden;
+    z-index: 2;
+}
+footer{
+    overflow: hidden;
+    z-index: 2;
+}
+.main-header{
+    top: 0;
+    position: sticky;
+    z-index: 3; 
+}
+.header-links{
+    color: white !important;
+    position: relative;
+    font-size: 12px;
+    font-family: "Azosans-medium";
+    letter-spacing: 3px; 
+}
+.header-links:hover{
+    transition-duration: .5s;
+    color: #79C91B !important;
+}
+.header-links::before{
+    position: absolute;
+    background-image: linear-gradient(to right,#70c618,#C1FA7F);
+    content: "";
+    width: 80%; 
+    right: 0;
+    left: 20%; 
+    bottom:0;
+}
+.header-links:hover::before{
+    transition-duration: .5s;
+    height: 2px;
+    width: 70%;
+} 
+.login-button{
+    letter-spacing: 3px;
+    color: #79C91B !important;
+}
+.login-button:hover{
+    text-decoration: none;
+}
+.heading-container{
+    padding-top: 80px;
+}
+.heading1{
+    font-family: "Azosans-bold";
+    font-size: 50px;
+    color: white;
+}
+.para1{
+    font-family: "Azosans-regular";
+    font-size: 24px;
+    color: #6ac403;
+}
+.login-arrow::before{
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 6px;
+    color: white;
+    border-right: 3px solid #79C91B;
+    border-bottom: 3px solid #79C91B; 
+    border-top: 3px solid #70c618;
+}
+
+
+.box1{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    padding: 30px 0px 20px 37px;
+    background-color: #20267B;
+    z-index: 1; 
+    overflow: hidden;
+}
+.box1::before{
+    content: "";
+    background-image: url("Panel\ 2.png");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    background-size: cover;
+    transition: 1s ease;
+    z-index: -1;
+}
+.box1:hover::before{
+    top: 0%;
+}
+.box1:hover .box1-heading{
+    color: #0063c5;
+}
+.box1:hover .back-image{
+    display: none;
+}
+ .box1-icon-style{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    background-color: #79C91B;
+}
+.box1-icon-style::after{
+    content: "01";
+    color: white;
+    transform: rotate(-45deg); 
+    position: absolute;
+    font-size: 16px;
+    font-family: "Azosans-bold";
+    top: 15%;
+    left: 20%;
+}
+.box1-heading{
+    font-size: 24px;
+    font-family: "Azosans-bold";
+    color: #FFFFFF;
+    opacity: 0.5; 
+}
+.arrow-icon-style{
+    font-size: 24px;
+    color: #FFFFFF;
+    opacity: 0.5; 
+}
+
+.box1-icon-style-2::after{
+    content: "02";
+}
+.box1-icon-style-3::after{
+    content: "03";
+}
+.box1-icon-style-4::after{
+    content: "04";
+}
+.heading2{
+    font-size: 40px;
+    color: #fff;
+    font-family: "Azosans-bold";
+}
+.para2{
+    font-size: 16px;
+    color: #fff;
+    font-family: "Azosans-regular";
+}
+.footer-headings{
+    position: relative;
+    font-family: "Azosans-bold";
+    
+}
+.footer-headings::before{
+    background-color: #79C91B;
+    position: absolute;
+    content: "";
+    top: 110%;
+    width: 160px;
+    height: 2px;
+}
+.inputs1{
+    color: white;
+    background-color: rgb(245, 245, 245,0.08);
+    padding: 13px 0px 9px 18px;
+    border-width: 0px;
+    border-radius: 30px;
+}
+.submit-button{
+    background-color: #79C91B;
+    border-radius: 20px;
+    color: white;
+    font-family: "Azosans-medium";
+}
+.footer-links1{
+    color: #70c618 !important;
+}
+.footer-links1:hover{
+    text-decoration: none;
+}
+.footer-links1-info{
+    color: white;
+    font-size: 13px;
+    
+}
+.ul1{
+    padding-left: 0px;
+    list-style-type: none;
+}
+.ul1-links{
+    font-family: "Azosans-regular";
+    font-size: 13px;
+    color: white;
+}
+.ul1-links:hover{
+    text-decoration: none;
+    color: #79C91B;
+}
+.icon-styling{
+    color:white;
+    font-size: 25px;
+}
+.copyright-content{
+    font-family: "Azosans-regular";
+    font-size: 12px;
+    color: white;
+}
+.copyright-links{
+    color: white;
+}
+.copyright-links:hover{
+    text-decoration: none;
+    color: white;
+}
+.image1{
+    animation: grid 5s ease-in-out  infinite forwards ;
+}
+@keyframes grid {
+    0%{
+        transform: scale(0.1);
+    }
+    25%{
+        transform: translateX(15px);
+    }
+    50%{
+        transform: translateX(-15px);
+    }
+    75%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform: scale(0.1);
+    }
+}
+ @media (min-width:768px) and (max-width:992px) {
+    .footer-headings{
+        position: relative;
+        font-family: "Azosans-bold";
+        
+    }
+    .footer-headings::before{
+        content: "";
+        width: 100px;
+        height: 2px;
+        position: absolute;
+        background-image: linear-gradient(to right,#70c618,#C1FA7F);
+        top: 100%;
+        left: 0;
+    }
+    .login-arrow::before{
+        color: white;
+        border-radius: 20px;
+        padding: 5px;
+        font-size: 12px;
+        border-right: 2px solid #79C91B;
+        border-bottom: 1px solid #79C91B;
+        border-top: 1px solid #70c618;
+    }
+    .header-links{
+        font-size: 10px;
+    }
+    .login-button{
+        font-family: "Azosans-medium";
+        font-size: 12px;
+        
+    }
+}
+@media screen and (max-width:576px) {
+    .header-links:hover{
+        border-bottom: #79C91B 2px solid;
+    }
+    .second-container{
+        padding-top: 30px;
+    }
+    .footer-headings{
+        border-bottom: #79C91B 2px solid;
+        text-align: center;
+        margin-top: 25px;
+        
+        
+    }
+    .footer-headings::before{
+        display: none;
+    }
+} 
+
+
+ 
